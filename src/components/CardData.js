@@ -361,6 +361,60 @@ const Ethnicwear = [
     },
     {
 
+        Name: "Cotton Printed Saree",
+        Category: "Saree",
+        type: "Ethnic wear",
+        Fabric: "Cotton",
+        Price: "317",
+        MRP: "367",
+        Discount: "14% off",
+        offer: "₹50 discount on 1st order",
+        Delivery_Type: "Free Delivery",
+        Rating: "4.5",
+        image: "https://images.meesho.com/images/products/73659087/pgqgc_512.jpg",
+        Size: "Free Size  (Saree Length Size : 5.5 m, Blouse Length Size: 0.8 m) m)",
+        Pattern: "Printed",
+        Country_of_Origin: "India"
+
+    },
+    {
+
+        Name: "Cotton Printed Saree",
+        Category: "Saree",
+        type: "Ethnic wear",
+        Fabric: "Cotton",
+        Price: "317",
+        MRP: "367",
+        Discount: "14% off",
+        offer: "₹50 discount on 1st order",
+        Delivery_Type: "Free Delivery",
+        Rating: "4.5",
+        image: "https://images.meesho.com/images/products/67439353/xd3rs_512.jpg",
+        Size: "Free Size  (Saree Length Size : 5.5 m, Blouse Length Size: 0.8 m) m)",
+        Pattern: "Printed",
+        Country_of_Origin: "India"
+
+    },
+    {
+
+        Name: "Cotton Printed Saree",
+        Category: "Saree",
+        type: "Ethnic wear",
+        Fabric: "Cotton",
+        Price: "317",
+        MRP: "367",
+        Discount: "14% off",
+        offer: "₹50 discount on 1st order",
+        Delivery_Type: "Free Delivery",
+        Rating: "4.5",
+        image: "https://images.meesho.com/images/products/67439358/pcdb3_512.jpg",
+        Size: "Free Size  (Saree Length Size : 5.5 m, Blouse Length Size: 0.8 m) m)",
+        Pattern: "Printed",
+        Country_of_Origin: "India"
+
+    },
+    {
+
         Name: "GOGAJI RED JACKET KURTI",
         Category: "kurti",
         type: "Ethnic wear",

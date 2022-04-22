@@ -2,13 +2,12 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
-import { useNavigate } from 'react-router-dom'
-import "../components/Header.css"
+import "../components/Signup.css"
 
-
-export const Header = () => {
-    return (
-
+function Signup() {
+  return (
+    <>
+        
         <Navbar bg="light" variant="light">
 
             <Container style={{ "height": "55px" }}>
@@ -32,28 +31,26 @@ export const Header = () => {
                             </div>
                         </div>
                     </Nav.Link>
-                    <div className='vertical_line'></div>
+                    <div className='vertical_line' style={{"marginTop":"10%"}}></div>
                     <Nav.Link href="#features" style={{ "color": "black" }}>
                         <p style={{ "fontSize": "16px", "paddingTop": "20px", "marginRight": "1rem", marginLeft: "1rem" }}>Become A Supplier</p>
-                    </Nav.Link>
-                    <div className='vertical_line'></div>
-                    <Nav.Link href="#Signup">
-                        <i class="fa-solid fa-user" style={{ "paddingTop": "20px", "marginRight": "1.9rem", "marginLeft": "2rem", "fontSize": "20px" }}>
-                            <p style={{ "fontSize": "x-small", "color": "black", "marginTop": "5px", marginLeft: "-25%" }}>Profile</p>
-                            <div className='hover_dropdown'>
-                                <h5>Hello user</h5>
-                            </div>
-                        </i>
-                    </Nav.Link>
-                    <Nav.Link href='#cart'>
-                        <i class="fa-solid fa-cart-shopping bg-light" style={{ "paddingTop": "20px", "fontSize": "20px" }}>
-                            <p style={{ "fontSize": "x-small", "color": "black", "marginTop": "5px", fontWeight: "normal" }}>Cart</p>
-                        </i>
                     </Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
-
-
-    )
+        <div className='body_data'>
+            <div className='image'>
+                <img src="https://images.meesho.com/images/marketing/1648820929975.jpeg" width="98%" borderRadius="3%"/>
+            </div>
+            <div>
+                <h4>Sign Up To view Your Profile</h4>
+            </div>
+            <form>
+                
+            </form>
+        </div>
+    </>
+  )
 }
+
+export default Signup
