@@ -8,7 +8,7 @@ const Ethnicwear = [
         Price: "765",
         MRP: "815",
         Discount: "6% off",
-        Offer: "₹50 discount on 1st order",
+        offer: "₹50 discount on 1st order",
         Delivery_Type: "Free Delivery",
         Rating: "4.3",
         image: "https://images.meesho.com/images/products/28568267/rp9q4_512.jpg",
@@ -73,7 +73,7 @@ const Ethnicwear = [
     },
     {
 
-        Name: "PURE SOFT COTTON SILK SAREE",
+        Name: "PURE SOFT SILK SAREE",
         Category: "Saree",
         type: "Ethnic wear",
         Fabric: "Silk sarees",
@@ -145,7 +145,7 @@ const Ethnicwear = [
     },
     {
 
-        Name: "DEPVIN LIFESTYLE PREETY MIRROR SAREE",
+        Name: "DEPVIN LIFESTYLE SAREE",
         Category: "Saree",
         type: "Ethnic wear",
         Fabric: "Silk sarees",
@@ -307,7 +307,7 @@ const Ethnicwear = [
     },
     {
 
-        Name: "Akansha new cotton silk milk Saree",
+        Name: "Akansha new cotton Saree",
         Category: "Saree",
         type: "Ethnic wear",
         Fabric: "Cotton",
@@ -415,7 +415,7 @@ const Ethnicwear = [
     },
     {
 
-        Name: "WHITE_ANARKALI_002 KURTI",
+        Name: "White_ANARKALI_002 kurti",
         Category: "kurti",
         type: "Ethnic wear",
         Fabric: "Rayon",
@@ -451,7 +451,7 @@ const Ethnicwear = [
     },
     {
 
-        Name: "PEACH ANARKALI NEW Kurtis",
+        Name: "PEACH ANARKALI Kurtis",
         Category: "kurti",
         type: "Ethnic wear",
         Fabric: "Rayon",
@@ -595,7 +595,7 @@ const Ethnicwear = [
     },
     {
 
-        Name: "Black Festive Anarkali Jacket Kurti",
+        Name: "Black Anarkali Jacket Kurti",
         Category: "kurti",
         type: "Ethnic wear",
         Fabric: "Anarkali",

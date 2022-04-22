@@ -2,28 +2,46 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
-
+import "../components/Header.css"
 export const Header = () => {
     return (
+        
         <Navbar bg="light" variant="light">
+            
             <Container style={{ "height": "55px" }}>
-                <Navbar.Brand href="#home" style={{ "fontSize": "30px" }}>meesho</Navbar.Brand>
+                                 
+                <Navbar.Brand href="#home" style={{ "fontSize": "38px", "fontWeight":"bold", color:"rgba(245, 40, 145, 0.8)" }}>meesho</Navbar.Brand>
                 <input id='search-input' type="search" placeholder='Try Saree, Kurti or search by Product code' style={{ "width": "30%", "padding": "15px", "marginRight": "25%", "borderRadius":"5px", "borderColor":"lightGrey" }}></input>
                 <Nav className="me-auto">
                     <Nav.Link>
-                        <i class="fa-light fa-mobile" style={{"color":"black", "paddingTop":"25px", "marginRight":"1.5rem"}}>Download App</i>
+                        <div style={{"marginRight":"1%", marginLeft:"-1%"}}>
+                       
+                        <i class="fa-light fa-mobile" style={{"color":"black", "paddingTop":"25px", "marginLeft":"-5.5rem", "display":"flex"}}>                        </i>
+                        <p className='dropdown'>Download App</p>
+                            <div className='hover_dropdown'>
+                                <h5>Download from</h5>
+                                <a href='https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow'>
+                                    <img className='imgset' src="https://images.meesho.com/images/pow/playstore-icon-big.png"/>
+                                </a>
+                                <a href='https://apps.apple.com/us/app/meesho/id1457958492'>
+                                    <img className='imgset' src="https://images.meesho.com/images/pow/appstore-icon-big.png" />
+                                </a>
+                            </div>
+                        </div>
                     </Nav.Link>
+                    <div className='vertical_line'></div>
                     <Nav.Link href="#features" style={{"color":"black"}}>
-                        <p style={{"fontSize":"medium" , "paddingTop":"20px" , "marginRight":"1.5rem"}}>Become A Supplier</p>
+                        <p style={{"fontSize":"16px" , "paddingTop":"20px" , "marginRight":"1rem", marginLeft:"1rem"}}>Become A Supplier</p>
                     </Nav.Link>
+                    <div className='vertical_line'></div>
                     <Nav.Link href="#Signup">
-                        <i class="fa-solid fa-user" style={{"paddingTop":"20px", "marginRight":"1.5rem"}}>
-                            <p style={{ "fontSize": "x-small", "color":"grey", "marginTop":"5px"}}>Profile</p>
+                        <i class="fa-solid fa-user" style={{"paddingTop":"20px", "marginRight":"1.9rem", "marginLeft":"2rem", "fontSize":"20px"}}>
+                            <p style={{ "fontSize": "x-small", "color":"black", "marginTop":"5px", marginLeft:"-25%"}}>Profile</p>
                         </i>
                     </Nav.Link>
                     <Nav.Link href='#cart'>
-                        <i class="fa-solid fa-cart-shopping" style={{"paddingTop":"20px"}}>
-                            <p style={{ "fontSize": "x-small", "color":"grey", "marginTop":"5px" }}>Cart</p>
+                        <i class="fa-solid fa-cart-shopping bg-light" style={{"paddingTop":"20px", "fontSize":"20px"}}>
+                            <p style={{ "fontSize": "x-small", "color":"black", "marginTop":"5px", fontWeight:"normal" }}>Cart</p>
                         </i>
                     </Nav.Link>
                 </Nav>

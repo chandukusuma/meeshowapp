@@ -1,10 +1,12 @@
 import Button from 'react-bootstrap/Button'
 import React from 'react'
 import { Container } from 'react-bootstrap'
-
+import '../HomePage/body.css'
 
 
 function Body() {
+
+
   return (
     <div>
       <Container className='container'
@@ -14,7 +16,8 @@ function Body() {
             "height": "350px",
             "margin": "auto",
             "display": "flex",
-            "marginTop": "3%"
+            "marginTop": "3%",
+            "marginBottom":"4%"
           }
         }>
         <div style={
@@ -64,10 +67,10 @@ function Body() {
         </div>
       </Container>
 
-      <div style={{ "display": "inline-flex", "width": "80%", "margin": "auto", "marginTop": "4%", "marginBottom":"4%" }}>
+      <div style={{ "display": "inline-flex", "width": "78.5%", "marginLeft":"11%", "marginTop": "4%", "marginBottom":"4%"}}>
         <hr style={{ "width": "24%", "marginLeft": "1%", "marginTop": "2%", "backgroundColor": "rgba(245, 40, 145, 0.8)" }}></hr>
-        <span style={{ "fontSize": "xx-large", "marginLeft": "5%", "marginRight": "5%", "fontWeight": "bold" }}>Top Catogories to choose from</span>
-        <hr style={{ "width": "24%", "alignItems": "right", "marginTop": "2%", "backgroundColor": "rgba(245, 40, 145, 0.8)" }}></hr>
+        <span style={{ "fontSize": "xx-large", "marginLeft": "5%", "marginRight": "-55%", "fontWeight": "bold" }}>Top Catogories to choose from</span>
+        <hr style={{ "width": "24%", "alignItems": "right", "marginTop": "2%", "backgroundColor": "rgba(245, 40, 145, 0.8)", "marginLeft":"58%" }}></hr>
       </div>
 
       <Container
@@ -75,13 +78,16 @@ function Body() {
           {
             "width": "81%",
             "margin": "auto",
+            "backgroundImage": `url("/bgImages/Fashionstore.jpg")`
           }
         }
       >
-        <div class="has-bg-img" style={{"height":"500px"}}>
+         <div class="has-bg-img" style={{"height":"500px", "marginTop":"4%"}}>
           <img class="bg-img" src="	https://images.meesho.com/images/marketing/1649759774600.jpg" alt="..." style={{"height":"100%", "width":"100%"}}/>
         </div>
       </Container>
+
+
 
       <Container
         style={

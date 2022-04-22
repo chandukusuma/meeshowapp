@@ -32,7 +32,7 @@ const Westernwear = [
 		Country_of_Origin: "India"
 	},
 	{
-		Name: "Charming Maroon Off-Shoulder Pleated Fit & Flare Dress",
+		Name: "Maroon Off-Shoulder Flare Dress",
 		Category: "Top_wear",
 		Fabric: "Polyester",
 		Price: "401",
@@ -85,7 +85,7 @@ const Westernwear = [
 		Discount: "7% off",
 		offer: "₹50 discount on 1st order",
 		Delivery_Type: "Free Delivery",
-		Rating: "",
+		Rating: "3.1",
 		image: "https://images.meesho.com/images/products/88562224/dosaw_512.jpg",
 		Size: "XS, S, M, L, XL, XXL",
 		Pattern: "Printed",
@@ -152,7 +152,7 @@ const Westernwear = [
 		Country_of_Origin: "India"
 	},
 	{
-		Name: " Broadstar Women's High Waist Slim Fit Regular Jeans",
+		Name: " Broadstar Women's Slim Fit Jeans",
 		Category: "Bottom_wear",
 		Fabric: "Denim",
 		Price: "672",
@@ -167,7 +167,7 @@ const Westernwear = [
 		Country_of_Origin: "India"
 	},
 	{
-		Name: "Broadstar Women's High Waist Slim Fit Regular Jeans",
+		Name: "Broadstar Women's Slim Fit Jeans",
 		Category: "Bottom_wear",
 		Fabric: "Denim",
 		Price: "819",
@@ -182,7 +182,7 @@ const Westernwear = [
 		Country_of_Origin: "India"
 	},
 	{
-		Name: " Broadstar Women's High Waist Slim Fit Regular Jeans",
+		Name: " Broadstar Women's Slim Fit Jeans",
 		Category: "Bottom_wear",
 		Fabric: "Denim",
 		Price: "672",
@@ -190,7 +190,7 @@ const Westernwear = [
 		Discount: "7% off",
 		offer: "₹50 discount on 1st order",
 		Delivery_Type: "Free Delivery",
-		Rating: "",
+		Rating: "2.8",
 		image: "https://images.meesho.com/images/products/29518172/7d3fe_512.jpg",
 		Size: "28, 30, 34, 36, 38",
 		Pattern: "",
@@ -205,7 +205,7 @@ const Westernwear = [
 		Discount: "6% off",
 		offer: "₹50 discount on 1st order",
 		Delivery_Type: "Free Delivery",
-		Rating: "",
+		Rating: "3.6",
 		image: "https://images.meesho.com/images/products/96904524/4wjom_512.jpg",
 		Size: "24, 26, 28, 30, 32",
 		Pattern: "",
@@ -242,7 +242,7 @@ const Westernwear = [
 		Country_of_Origin: "India"
 	},
 	{
-		Name: "Casual Latest Women Jens Surface Styling : Fringed",
+		Name: "Casual Jens Surface Styling : Fringed",
 		Category: "Bottom_wear",
 		Fabric: "",
 		Price: "218",
@@ -287,7 +287,7 @@ const Westernwear = [
 		Country_of_Origin: "India"
 	},
 	{
-		Name: "RAVISHING WOMEN PLAIN 5-BUTTON JEANS",
+		Name: "WOMEN PLAIN 5-BUTTON JEANS",
 		Category: "Bottom_wear",
 		Fabric: "Cotton Blend",
 		Price: "348",
