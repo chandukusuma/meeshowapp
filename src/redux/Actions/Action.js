@@ -4,3 +4,9 @@ export const SINGLE = (item) => {
         payload: item
     }
 }
+
+export const GetData = () => {
+    return {
+        type : "Get_Data",
+    }
+}

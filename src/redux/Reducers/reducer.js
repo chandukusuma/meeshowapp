@@ -5,11 +5,23 @@ const INIT_STATE = {
 export const Spagereducer = (state=INIT_STATE,action) => {
     switch(action.type){
         case "ADD_DATA":
+
+        {console.log(state);
+
             return {
-                Spage:[action.payload]
+                Spage:[...state.Spage, action.payload]
+            }
+        }
+
+        case "get_Data":
+
+            return {
+                ...state
             }
 
         default :
             return state
     }
 }
+
+

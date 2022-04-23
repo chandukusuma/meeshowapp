@@ -1,0 +1,39 @@
+.bg-img{
+    background-image: url("https://images.meesho.com/images/marketing/1649759774600.jpg");
+    height: 500px
+}
+.bg-img2{
+    background-image: url("https://images.meesho.com/images/pow/download_banner_desktop.webp");
+    height : 500px
+}
+.image-on-bg{
+    margin-left: 2%;
+    margin-top: 4%;
+}
+.image2-on-bg{
+    margin-left: 2%;
+    margin-top: 16%;
+}
+.image3-on-bg{
+    margin-left: 2%;
+    margin-top: 16%;
+}
+.business-card{
+    margin-top: 1%;
+    width: 45%;
+    color: rgb(209, 24, 104);
+    margin-left: 50%;
+    text-align: end;
+}
+.soc-web{
+    width: 35%;
+    margin-top: 5%;
+    margin-left: 60%;
+}
+.soc-img{
+    width: 100%;
+    margin-right: 5%;
+}
+.soc-img2{
+    width: 105%
+}

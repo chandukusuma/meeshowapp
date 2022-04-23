@@ -3,20 +3,22 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Header } from './components/Header';
 import Hovernav from './components/HomePage/Hovernav';
+import Womens from './components/Womens';
 import Home from './components/HomePage/Home';
 import Silk from './components/HomePage/Silk';
 import Individual from './components/Individual';
 import Womenethnic from './components/Womenethnic';
 import Cotton from './components/Cotton';
 import Signup from './components/Signup';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './components/HomePage/Footer';
+import Cart from './components/Cart';
+import {Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      {/* <Header />
-      <Hovernav /> */}
-      <BrowserRouter>
+    <Header />
+    <Hovernav ></Hovernav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/Silk' element={<Silk />} />
@@ -24,9 +26,10 @@ function App() {
           <Route path="/WomenEthnic" element={<Womenethnic />} />
           <Route path="/cotton" element={<Cotton />} />
           <Route path='/Signup' element={<Signup />} />
+          <Route path='/Women' element={<Womens />} />
+          <Route path="/Cart" element={<Cart />} />
         </Routes>
-      </BrowserRouter>
-
+    <Footer />
     </>
   );
 }

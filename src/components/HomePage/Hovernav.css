@@ -1,7 +1,7 @@
 .main{
     display: flex;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
 }
 .outer_div{
     display: flex;
@@ -11,7 +11,7 @@
 }
 
 .inner{
-    display: flex;
+    display: block;
     margin-left: 5%;
     padding-top: 0%;
     width: 10%;
@@ -24,11 +24,11 @@
 
 .display_hover{
     background-color: white;
-    display: flex;
     border-radius: 5px;
     width: 100%;
-    margin-top: 2.5%;
-    margin-left:3%;
+    padding-top: 2%;
+    z-index: 20;
+    margin-left:1%;
     border: 1px solid grey;
     padding: 10px 20px 20px;
     position: absolute;
@@ -38,10 +38,9 @@
 
 }
 
-.inner:hover + .display_hover{
+.inner:hover .display_hover{
     display: block;
     /* display: flex; */
-    position: absolute;
 }
 .data{
     margin-right: 2%;

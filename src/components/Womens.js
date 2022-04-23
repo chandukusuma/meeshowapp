@@ -2,35 +2,15 @@ import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import Ethnicwear from './CardData'
 import Westernwear from './data'
-import { useDispatch, useSelector } from 'react-redux'
-import { Spagereducer } from '../redux/Reducers/reducer'
-import { SINGLE } from '../redux/Actions/Action';
 
-
-
-function Cards() {
-
-    
-    const getData = useSelector((state) => state.Spagereducer);
-
-    // console.log(getData)
-
+function Womens() {
 
     const [data, setData] = useState(Westernwear);
     const [women, setWomen] = useState(Ethnicwear)
 
-    const dispatch = useDispatch();
-
-
-    const send = (element) => {
-        dispatch(SINGLE(element))
-    }
-
-
-    return (
-
-        <div>
-            <h2 style={{ "textAlign": "left", "marginLeft": "8.5%", "padding": "2%" }}>Products for you</h2>
+  return (
+    <div>
+            <h2 style={{ "textAlign": "left", "marginLeft": "8.5%", "padding": "2%" }}>Womens Wear</h2>
 
             <div className='row d-grid' style={{ "width": "80%", "margin": "auto", "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%", "justifyContent": "center", "gridGap": "1rem", "marginBottom": "1%" }}>
                 {
@@ -41,7 +21,7 @@ function Cards() {
 
                                 >
                                     <Card.Img variant="top" src={e.image} style={{ "height": "20rem", "width": "16.5rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} 
-                                        onClick={() => send(e)}
+                                        
                                     />
                                     <Card.Body>
                                         <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }}>{e.Name}</Card.Title>
@@ -101,7 +81,7 @@ function Cards() {
                     women.map((element, id) => {
                         return (
                             <>
-                                <Card style={{ width: '18rem', "borderRadius": "0.7rem" }} onClick={() => send(element)}>
+                                <Card style={{ width: '18rem', "borderRadius": "0.7rem" }}>
                                     <Card.Img variant="top" src={element.image} style={{ "height": "20rem", "width": "16.5rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} />
                                     <Card.Body>
                                         <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }} >{element.Name}</Card.Title>
@@ -149,7 +129,7 @@ function Cards() {
 
             </div>
         </div>
-    )
+  )
 }
 
-export default Cards
+export default Womens

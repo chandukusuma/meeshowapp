@@ -2,11 +2,14 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
-import { useNavigate } from 'react-router-dom'
+import {useNavigate}  from 'react-router-dom'
 import "../components/Header.css"
 
 
 export const Header = () => {
+
+     const navigate = useNavigate();
+
     return (
 
         <Navbar bg="light" variant="light">
@@ -38,14 +41,23 @@ export const Header = () => {
                     </Nav.Link>
                     <div className='vertical_line'></div>
                     <Nav.Link href="#Signup">
+                        <a href='/Signup'>
                         <i class="fa-solid fa-user" style={{ "paddingTop": "20px", "marginRight": "1.9rem", "marginLeft": "2rem", "fontSize": "20px" }}>
-                            <p style={{ "fontSize": "x-small", "color": "black", "marginTop": "5px", marginLeft: "-25%" }}>Profile</p>
-                            <div className='hover_dropdown'>
-                                <h5>Hello user</h5>
+                            <p className='dropdown_two' style={{ "fontSize": "x-small", "color": "black", "marginTop": "5px", marginLeft: "-25%" }}>Profile
+                            <div className='hover_dropdown_two'>
+                                <p style={{"fontFamily":"-moz-initial", "fontSize":"16px"}}>Hello user</p>
+                                <p style={{"fontFamily":"-moz-initial", "fontSize":"12px"}}>To access your meesho account</p>
+                                <button className='hover_btn'>Sign Up</button>
+                                <div className='hr-line'></div>
+                                <div className='order_bag'>
+                                    <i class="fa-solid fa-bag-shopping" style={{"marginRight":"3%"}}>My orders</i>
+                                </div>
                             </div>
+                            </p>
                         </i>
+                        </a>
                     </Nav.Link>
-                    <Nav.Link href='#cart'>
+                    <Nav.Link onClick={() => {navigate("/Cart")}}>
                         <i class="fa-solid fa-cart-shopping bg-light" style={{ "paddingTop": "20px", "fontSize": "20px" }}>
                             <p style={{ "fontSize": "x-small", "color": "black", "marginTop": "5px", fontWeight: "normal" }}>Cart</p>
                         </i>

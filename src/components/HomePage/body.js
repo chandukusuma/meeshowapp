@@ -17,7 +17,7 @@ function Body() {
             "margin": "auto",
             "display": "flex",
             "marginTop": "3%",
-            "marginBottom":"4%"
+            "marginBottom": "4%"
           }
         }>
         <div style={
@@ -67,13 +67,15 @@ function Body() {
         </div>
       </Container>
 
-      <div style={{ "display": "inline-flex", "width": "78.5%", "marginLeft":"11%", "marginTop": "4%", "marginBottom":"4%"}}>
+      <div style={{ "display": "inline-flex", "width": "78.5%", "marginLeft": "11%", "marginTop": "4%", "marginBottom": "4%" }}>
         <hr style={{ "width": "24%", "marginLeft": "1%", "marginTop": "2%", "backgroundColor": "rgba(245, 40, 145, 0.8)" }}></hr>
         <span style={{ "fontSize": "xx-large", "marginLeft": "5%", "marginRight": "-55%", "fontWeight": "bold" }}>Top Catogories to choose from</span>
-        <hr style={{ "width": "24%", "alignItems": "right", "marginTop": "2%", "backgroundColor": "rgba(245, 40, 145, 0.8)", "marginLeft":"58%" }}></hr>
+        <hr style={{ "width": "24%", "alignItems": "right", "marginTop": "2%", "backgroundColor": "rgba(245, 40, 145, 0.8)", "marginLeft": "58%" }}></hr>
       </div>
 
       <Container
+
+        className='body_container'
         style={
           {
             "width": "81%",
@@ -82,8 +84,10 @@ function Body() {
           }
         }
       >
-         <div class="has-bg-img" style={{"height":"500px", "marginTop":"4%"}}>
-          <img class="bg-img" src="	https://images.meesho.com/images/marketing/1649759774600.jpg" alt="..." style={{"height":"100%", "width":"100%"}}/>
+        <div className='bg-img'>
+          <a href="/women"><img className='image-on-bg' src="https://images.meesho.com/images/marketing/1649760442043.jpg" /></a>
+          <a href="/"><img className='image2-on-bg' src="https://images.meesho.com/images/marketing/1649760423313.jpg" /></a>
+          <a href="/"><img className='image3-on-bg' src="https://images.meesho.com/images/marketing/1649759799809.jpg" /></a>
         </div>
       </Container>
 
@@ -94,13 +98,21 @@ function Body() {
           {
             "width": "81%",
             "margin": "auto",
-            "marginTop":"4%"
+            "marginTop": "4%"
           }
         }
       >
-        <div class="has-bg-img" style={{"height":"500px"}}>
-          <img class="bg-img" src="https://images.meesho.com/images/pow/1629883965347.jpeg" alt="..." style={{"height":"100%", "width":"100%"}}/>
+        <div className='bg-img2'>
+          <div className='business-card'>
+            <h3 style={{"color":"skyblue"}}>Become a Reseller and</h3>
+            <h1>Start your online business with zero investment</h1>
+          </div>
+          <div style={{"display":"flex"}} className="soc-web">
+          <a style={{"width":"45%","marginRight":"6%"}} href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow&pow_click_page_type=HP&pow_distinct_id=18053349dec81b-07e33e4c84d42-7b422e27-151800-18053349dedc4e"><img src="https://images.meesho.com/images/pow/playstore-icon.png" className='soc-img' /></a>
+          <a style={{"width":"46%"}} href="https://apps.apple.com/us/app/meesho/id1457958492" element="blank"><img src="https://images.meesho.com/images/pow/appstore-icon.png" className='soc-img2'/></a>
         </div>
+        </div>
+
       </Container>
 
 

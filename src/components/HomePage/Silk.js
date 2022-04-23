@@ -1,12 +1,20 @@
 import React, { useState } from 'react'
 import Ethnicwear from '../CardData'
 import Card from 'react-bootstrap/Card'
+import { useDispatch } from 'react-redux'
+import {SINGLE} from '../../redux/Actions/Action'
 
 function Silk() {
 
   const [fabric, setFabric] = useState(Ethnicwear)
 
-  console.log(fabric)
+  const dispatch = useDispatch();
+
+
+    const send = (e) => {
+        dispatch(SINGLE(e))
+    }
+
 
 
 
@@ -22,7 +30,7 @@ function Silk() {
               if(e.Fabric === "Silk sarees"){
                 return (
                   <>
-                      <Card style={{ width: '18rem', "borderRadius": "0.7rem" }}>
+                      <Card style={{ width: '18rem', "borderRadius": "0.7rem" }} onClick={() => send(e)}>
                           <Card.Img variant="top" src={e.image} style={{ "height": "21rem", "width": "17.7rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} />
                           <Card.Body>
                               <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }}>{e.Name}</Card.Title>
