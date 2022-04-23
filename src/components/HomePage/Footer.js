@@ -15,11 +15,11 @@ function Footer() {
                     </div>
                     <div className="download">
                         <img
-                            src="https://meesho.com/_next/static/images/google-play-button-1f2aa747a3eefa161840b04e057b31ac.png"
+                            src="https://images.meesho.com/images/pow/playstore-icon.png"
                             alt=""
                         />
                         <img
-                            src="https://meesho.com/_next/static/images/appstore-button-4b171cf04fe0557718dfd2cbf309c61d.png"
+                            src="https://images.meesho.com/images/pow/appstore-icon.png"
                             alt=""
                         />
                     </div>
@@ -28,15 +28,14 @@ function Footer() {
                     <div className="firstCareerView">
                         <p className="content">Careers</p>
                         <p className="subContent">Become a supplier</p>
+                        <p className='subContent'>Our Influencer Program</p>
+                        <p className='subContent'>Hall of Fame</p>
                     </div>
                     <div className="secondCareerView">
                         <p className="content">Legal and Polices</p>
                         <p className="subContent">Meesho Tech Blog</p>
+                        <p className="subContent">Notices and Returns</p>
                     </div>
-                </div>
-                <div className="contact">
-                    <p className="contactTitle">Contact Us</p>
-                    <p className="subContent">query@meesho.com</p>
                 </div>
                 <div className="reachOut">
                     <p className="contactTitle">Reach out to us</p>
@@ -67,6 +66,10 @@ function Footer() {
                             onClick={() => (window.location.href = "https://www.twitter.com")}
                         />
                     </div>
+                </div>
+                <div className="contact">
+                    <p className="contactTitle">Contact Us</p>
+                    <p className="subContent">query@meesho.com</p>
                 </div>
             </div>
         </div>

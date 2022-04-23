@@ -45,9 +45,9 @@ function Hovernav() {
                         </div>
                     </div>
                 </p>
-                <p className='inner'>Women Western</p>
-                <div className='display_hover'>
-                    <div className='data'>
+                <p className='inner-1'>Women Western
+                <div className='display_hover_1'>
+                    <div className='data_2'>
                         <h5 style={{ "maeginTop": "2%" }}>Top wear</h5>
                         <div>
                             <a href='/Womenethnic'>
@@ -55,7 +55,7 @@ function Hovernav() {
                             </a>
                         </div>
                     </div>
-                    <div className='data'>
+                    <div className='data_2'>
                         <h5>Bottom Wear</h5>
                         <div>
                             <a href='/Silk'>
@@ -64,6 +64,7 @@ function Hovernav() {
                         </div>
                     </div>
                 </div>
+                </p>
             </div>
         </div>
     )

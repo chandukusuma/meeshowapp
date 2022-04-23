@@ -13,12 +13,23 @@
 .inner{
     display: block;
     margin-left: 5%;
-    padding-top: 0%;
+    margin-bottom: 5%;
     width: 10%;
     font-size: 16px;
 }
 
 .inner:hover{
+    color:rgba(192, 44, 108)
+}
+.inner-1{
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 10%;
+    font-size: 16px;
+}
+
+.inner-1:hover{
     color:rgba(192, 44, 108)
 }
 
@@ -27,7 +38,23 @@
     border-radius: 5px;
     width: 100%;
     padding-top: 2%;
-    z-index: 20;
+    z-index: 10;
+    margin-left:1%;
+    border: 1px solid grey;
+    padding: 10px 20px 20px;
+    position: absolute;
+    display: none;
+    margin-right: 2%;
+
+
+}
+
+.display_hover_1{
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    padding-top: 2%;
+    z-index: 10;
     margin-left:1%;
     border: 1px solid grey;
     padding: 10px 20px 20px;
@@ -40,9 +67,30 @@
 
 .inner:hover .display_hover{
     display: block;
+    padding-bottom:5%;
+    width: 100%;
+    margin-left: -5%;
+    border: 1px solid purple
     /* display: flex; */
 }
+
+.inner-1:hover .display_hover_1{
+    display: block;
+    padding-bottom:5%;
+    width: 100%;
+    margin-left: -20%;
+    border: 1px solid purple
+    /* display: flex; */
+}
+
 .data{
     margin-right: 2%;
-    display: inline-block
+    display: inline-block;
+    border: 1px solid red;
+}
+
+.data_2{
+    margin-right: 2%;
+    display: inline-block;
+    border: 1px solid red;
 }
