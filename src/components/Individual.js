@@ -5,11 +5,13 @@ import { ADD } from "../redux/Actions/Action"
 import { Individualreducer } from '../redux/Reducers/reducer'
 import { SINGLE } from '../redux/Actions/Action';
 import "../components/Individual.css"
-import { Navigate } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 function Individual() {
 
     const dispatch = useDispatch();
+
+    const navigate = useNavigate()
 
     const Singleitem = useSelector((state) => state.Individualreducer.Indpage);
 
@@ -33,7 +35,7 @@ function Individual() {
                                         <button style={{ "width": "100%", "backgroundColor": "rgb(244, 68, 124)", "borderStyle": "none", "borderRadius": "10px", "padding": "10px", "marginTop": "5%" }} 
                                             onClick={() => {
                                                 share(e);
-                                                {Navigate("/Signup")}
+                                                {navigate("/Signup")}
                                             }}
                                         >Add To Cart</button>
                                     </div>
