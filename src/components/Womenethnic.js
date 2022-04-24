@@ -1,6 +1,12 @@
 import React, {useState} from 'react'
 import Card from 'react-bootstrap/Card'
 import Ethnicwear from './CardData'
+import { Header } from './Header';
+import Hovernav from './HomePage/Hovernav';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+
+
 
 function Womenethnic() {
 
@@ -10,6 +16,10 @@ function Womenethnic() {
   
 
   return (
+    
+    <>
+    <Header />
+      <Hovernav />
     <div className='row d-grid' style={
       {
           "width": "80%",
@@ -76,6 +86,12 @@ function Womenethnic() {
       }
 
   </div>
+  <div style={{"marginBottom":"10%", marginLeft:"40%"}}>
+                <Stack spacing={2}>
+                    <Pagination count={10} color="secondary" />
+                </Stack>
+            </div>
+  </>
   )
 }
 

@@ -7,10 +7,12 @@ import Stack from '@mui/material/Stack';
 import Hovernav from './HomePage/Hovernav'
 
 
-function Cotton() {
 
 
-    const [cotton, setCotton] = useState(Ethnicwear)
+function Rayon() {
+
+
+    const [anarkali, setAnarkali] = useState(Ethnicwear)
 
     return (
         <>
@@ -20,9 +22,9 @@ function Cotton() {
     
           <div className='row d-grid' style={{ "width": "94%", "margin": "auto", "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%", "justifyContent": "center", "gridGap": "1rem", "marginBottom": "1%" }}>
             {
-              cotton.map((e) => {
+              anarkali.map((e) => {
     
-                  if(e.Fabric === "Cotton"){
+                  if(e.Fabric === "Rayon"){
                     return (
                       <>
                           <Card style={{ width: '18rem', "borderRadius": "0.7rem" }}>
@@ -84,4 +86,4 @@ function Cotton() {
       )
 }
 
-export default Cotton
+export default Rayon

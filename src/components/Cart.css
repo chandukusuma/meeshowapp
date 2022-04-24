@@ -1,10 +1,12 @@
+
 .main{
     background-color: white;
     margin-bottom: 0.5%;
+    padding-top: 2%;
 }
 .mian-2{
     background-color: white;
-    width: 60%;
+    width: 65%;
     margin: auto;
 
 }
@@ -22,7 +24,7 @@
     width: 55%;
 
 }
-.inner-ring-2{
+.inner-ring-2{ 
     width: 40%;
     border: 1px solid whitesmoke
 }
@@ -40,33 +42,42 @@
 .inner-one > div{
     display: flex;
 }
+.inner-one{
+    margin-left: 2.5%;
+    width: 95%;
+    height: 100px
+}
 .first-div{
     display: flex;
-    border: 1px solid grey;
+    border: 1px solid rgb(209, 209, 209);
     border-radius: 5px;
 }
 .image-short{
-    width: 17%;
-    padding: 5px;
-    margin-top:1%
+    width: 20%;
+    height: 80%;
+    padding: 2px;
+    margin-top:2%
 }
-.image-short > img{
+.cart-img{
     width: 100%;
     padding: 2%;
-    margin-top: 2%
+    margin-top: 2%;
+    border-radius: 5px;
 }
 .flex-1{
-    width: 80%;
-    margin-left: 20%;
-    margin-top: -18.5%
+    width: 75%;
+    margin-left: 23%;
+    margin-top: -16.5%;
+    margin-bottom: .5%;
 }
 .flex-2{
-    width: 80%;
+    width: 20%;
     margin-top: -3%;
-    margin-left: 20%;
+    margin-left: 23%;
+    margin-bottom: .5%;
 }
 .price-of-data{
-    margin-left: 20%;
+    margin-left: 23%;
     width: 20%;
     margin-top: -3%;
 }
@@ -75,7 +86,7 @@
     border-radius: 10px;
 }
 .supplier{
-    border: 1px solid grey;
+    border: 1px solid rgb(199, 199, 199);
     border-radius: 5px;
 }
 .supplier > p{

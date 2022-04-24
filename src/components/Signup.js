@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import "../components/Signup.css"
 import axios from "axios"
-import {Navigate, useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
+import { Header } from './Header'
 
 function Signup() {
 
@@ -40,6 +41,7 @@ function Signup() {
 
     return (
         <>
+        <Header />
             <div className='body_data'>
                 <div className='image'>
                     <img src="https://images.meesho.com/images/marketing/1648820929975.jpeg" />

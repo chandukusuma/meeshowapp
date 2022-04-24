@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import Ethnicwear from './CardData'
 import Westernwear from './data'
+import { Header } from './Header'
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+import Hovernav from './HomePage/Hovernav'
+
 
 function Womens() {
 
@@ -10,6 +15,8 @@ function Womens() {
 
   return (
     <div>
+        <Header />
+      <Hovernav />
             <h2 style={{ "textAlign": "left", "marginLeft": "8.5%", "padding": "2%" }}>Womens Wear</h2>
 
             <div className='row d-grid' style={{ "width": "80%", "margin": "auto", "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%", "justifyContent": "center", "gridGap": "1rem", "marginBottom": "1%" }}>
@@ -127,6 +134,11 @@ function Womens() {
                     })
                 }
 
+            </div>
+            <div style={{"marginBottom":"10%", marginLeft:"40%"}}>
+                <Stack spacing={2}>
+                    <Pagination count={10} color="secondary" />
+                </Stack>
             </div>
         </div>
   )

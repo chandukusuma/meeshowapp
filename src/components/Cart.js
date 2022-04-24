@@ -3,7 +3,7 @@ import Spagereducer from '../redux/Reducers/reducer'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import "../components/Cart.css"
-
+import Cartnav from './Cartnav'
 
 function Cart() {
 
@@ -20,6 +20,8 @@ function Cart() {
     const navigate = useNavigate();
 
     return (
+        <>
+        <Cartnav />
         <div className='main'>
 
             {
@@ -76,7 +78,7 @@ function Cart() {
                                                     <p style={{ "marginLeft": "10%", color: "rgb(255, 0, 0)" }}>EDIT</p>
                                                 </div>
                                                 <div className='flex-2'>
-                                                    <p style={{ width: "65%" }}>Size: {e.Size}</p>
+                                                    <p style={{ width: "65%" }}>Size: {e.Size[0]}</p>
                                                     <p style={{ marginLeft: "2%" }}>Qty:1</p>
                                                 </div>
                                                 <div className='price-of-data'>
@@ -133,6 +135,7 @@ function Cart() {
             }
 
         </div>
+        </>
     )
 }
 

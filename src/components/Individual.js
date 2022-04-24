@@ -6,6 +6,8 @@ import { Individualreducer } from '../redux/Reducers/reducer'
 import { SINGLE } from '../redux/Actions/Action';
 import "../components/Individual.css"
 import { Navigate, useNavigate } from 'react-router-dom'
+import { Header } from './Header'
+import Hovernav from './HomePage/Hovernav'
 
 function Individual() {
 
@@ -20,7 +22,9 @@ function Individual() {
     }
 
     return (
-
+        <>
+    <Header />
+      <Hovernav />
         <div style={{"backgroundColor":"white", "marginBlock":"2%"}}>
 
             {
@@ -124,6 +128,7 @@ function Individual() {
 
 
         </div>
+        </>
     )
 }
 
