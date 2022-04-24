@@ -35,7 +35,7 @@ function Individual() {
                                         <button style={{ "width": "100%", "backgroundColor": "rgb(244, 68, 124)", "borderStyle": "none", "borderRadius": "10px", "padding": "10px", "marginTop": "5%" }} 
                                             onClick={() => {
                                                 share(e);
-                                                {navigate("/Signup")}
+                                                {navigate("/Cart")}
                                             }}
                                         >Add To Cart</button>
                                     </div>

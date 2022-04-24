@@ -1,6 +1,7 @@
 import React from 'react'
 import Spagereducer from '../redux/Reducers/reducer'
 import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import "../components/Cart.css"
 
 
@@ -16,7 +17,7 @@ function Cart() {
 
     console.log(cart)
 
-
+    const navigate = useNavigate();
 
     return (
         <div className='main'>
@@ -116,7 +117,7 @@ function Cart() {
                                             <p>Clicking on continue will not deduct any money</p>
                                         </div>
                                         <div className='div-to-btn'>
-                                        <button className='button-to-add'>continue</button>
+                                        <button className='button-to-add' onClick={() => {navigate("/Signup")}}>continue</button>
                                         </div>
                                         <div style={{width:"100%", paddingTop:"3%"}}>
                                             <img src="https://images.meesho.com/images/marketing/1588578650850.png" width="100%"/>
