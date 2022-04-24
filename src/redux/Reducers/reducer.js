@@ -1,6 +1,10 @@
 const INIT_STATE = {
-    Spage : []
+    Spage : [],
 };
+
+const INITIAL = {
+    Indpage : []
+}
 
 export const Spagereducer = (state=INIT_STATE,action) => {
     switch(action.type){
@@ -9,19 +13,29 @@ export const Spagereducer = (state=INIT_STATE,action) => {
         {console.log(state);
 
             return {
-                Spage:[...state.Spage, action.payload]
+                Spage:[action.payload]
             }
         }
 
-        case "get_Data":
-
-            return {
-                ...state
-            }
+        
 
         default :
             return state
     }
 }
+
+export const Individualreducer = (state=INITIAL, action) => {
+    switch(action.type){
+        case "SHOW_DATA":
+            return{
+                Indpage:[action.payload]
+            }
+
+        default:
+           return state
+    }
+}
+
+
 
 

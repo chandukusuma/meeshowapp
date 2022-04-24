@@ -1,0 +1,62 @@
+body{
+    background-color: white;
+}
+.container-heavy > div{
+    padding: 5%;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+
+}
+.rating{
+    width: 10%;
+    height: 30px;
+    background-color: green;
+    border-radius: 15px;
+    color: white;
+}
+.rating > p{
+    padding: 1%;
+    padding-left: 15%;
+}
+.offer{
+    margin-top: -1.5%;
+}
+.DT{
+    width: 12%;
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.DT > p{
+    color: grey;
+    padding: 3%;
+    font-size: 10px;
+}
+.btn-div{
+    margin-left: 50%;
+    width: 20%
+}
+.last-btn{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(244, 68, 124);
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+.rate-sty{
+    border: 1px solid grey;
+    width: 60%;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background-color: rgb(172, 217, 234);
+}
+.sold-div > div{
+    padding: 3%;
+}
+
+

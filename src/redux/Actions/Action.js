@@ -1,3 +1,10 @@
+export const ADD = (element) => {
+    return {
+        type: "SHOW_DATA",
+        payload: element
+    }
+}
+
 export const SINGLE = (item) => {
     return {
         type: "ADD_DATA",
@@ -10,3 +17,4 @@ export const GetData = () => {
         type : "Get_Data",
     }
 }
+

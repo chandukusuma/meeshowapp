@@ -4,16 +4,20 @@ import Ethnicwear from './CardData'
 import Westernwear from './data'
 import { useDispatch, useSelector } from 'react-redux'
 import { Spagereducer } from '../redux/Reducers/reducer'
-import { SINGLE } from '../redux/Actions/Action';
+import { Individualreducer } from '../redux/Reducers/reducer'
+import { ADD } from "../redux/Actions/Action"
+import { useNavigate } from 'react-router-dom'
 
 
 
 function Cards() {
 
     
-    const getData = useSelector((state) => state.Spagereducer);
+    const getData = useSelector((state) => state.Individualreducer.Indpage);
 
-    // console.log(getData)
+    //console.log("getData:", getData)
+
+    const navigate = useNavigate()
 
 
     const [data, setData] = useState(Westernwear);
@@ -22,9 +26,12 @@ function Cards() {
     const dispatch = useDispatch();
 
 
-    const send = (element) => {
-        dispatch(SINGLE(element))
+    const send = (e) => {
+        dispatch(ADD(e))
     }
+
+  
+
 
 
     return (
@@ -41,7 +48,10 @@ function Cards() {
 
                                 >
                                     <Card.Img variant="top" src={e.image} style={{ "height": "20rem", "width": "16.5rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} 
-                                        onClick={() => send(e)}
+                                        onClick={() => {
+                                            send(e);
+                                            {navigate("/single")}
+                                        }}
                                     />
                                     <Card.Body>
                                         <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }}>{e.Name}</Card.Title>
@@ -101,7 +111,11 @@ function Cards() {
                     women.map((element, id) => {
                         return (
                             <>
-                                <Card style={{ width: '18rem', "borderRadius": "0.7rem" }} onClick={() => send(element)}>
+                                <Card style={{ width: '18rem', "borderRadius": "0.7rem" }} onClick={() => {
+                                        send(element);
+                                        {navigate("/Single")}
+                                    
+                                    }}>
                                     <Card.Img variant="top" src={element.image} style={{ "height": "20rem", "width": "16.5rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} />
                                     <Card.Body>
                                         <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }} >{element.Name}</Card.Title>

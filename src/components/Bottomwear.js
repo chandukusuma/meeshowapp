@@ -4,9 +4,9 @@ import Westernwear from './data'
 
 
 
-function Topwear() {
+function Bottomwear() {
 
-    const [top, setTop] = useState(Westernwear);
+    const [bottom, setBottom] = useState(Westernwear);
 
     return (
 
@@ -16,9 +16,9 @@ function Topwear() {
 
             <div className='row d-grid' style={{ "width": "80%", "margin": "auto", "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%", "justifyContent": "center", "gridGap": "1rem", "marginBottom": "1%" }}>
                 {
-                    top.map((e, id) => {
+                    bottom.map((e, id) => {
 
-                        if (e.Category === "Top_wear") {
+                        if (e.Category === "Bottom_wear") {
 
                             return (
                                 <>
@@ -78,4 +78,4 @@ function Topwear() {
     )
 }
 
-export default Topwear
+export default Bottomwear

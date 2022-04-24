@@ -12,6 +12,8 @@ import Cotton from './components/Cotton';
 import Signup from './components/Signup';
 import Footer from './components/HomePage/Footer';
 import Cart from './components/Cart';
+import Topwear from './components/Topwear';
+import Bottomwear from './components/Bottomwear';
 import {Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
           <Route path='/Signup' element={<Signup />} />
           <Route path='/Women' element={<Womens />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/Topwear" element={<Topwear />} />
+          <Route path="/Bottomwear" element={<Bottomwear />} />
         </Routes>
     <Footer />
     </>

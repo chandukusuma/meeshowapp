@@ -1,0 +1,107 @@
+.main{
+    background-color: white;
+    margin-bottom: 0.5%;
+}
+.mian-2{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+
+}
+.outer_ring{
+    display: flex;
+}
+.vt-ln{
+    width: 2px;
+    height: 200px;
+    background-color: grey;
+    margin-left: 2%;
+    margin-right: 2%
+}
+.inner-ring-1{
+    width: 55%;
+
+}
+.inner-ring-2{
+    width: 40%;
+    border: 1px solid whitesmoke
+}
+.inner-ring-2 > div{
+    display: flex;
+}
+
+.hr-ln{
+    width: 100%;
+    height: 1px;
+    border : 1px solid lightgrey;
+    background-color: grey;
+    margin-bottom: 2%;
+}
+.inner-one > div{
+    display: flex;
+}
+.first-div{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.image-short{
+    width: 17%;
+    padding: 5px;
+    margin-top:1%
+}
+.image-short > img{
+    width: 100%;
+    padding: 2%;
+    margin-top: 2%
+}
+.flex-1{
+    width: 80%;
+    margin-left: 20%;
+    margin-top: -18.5%
+}
+.flex-2{
+    width: 80%;
+    margin-top: -3%;
+    margin-left: 20%;
+}
+.price-of-data{
+    margin-left: 20%;
+    width: 20%;
+    margin-top: -3%;
+}
+
+.cart-img{
+    border-radius: 10px;
+}
+.supplier{
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.supplier > p{
+    color: grey;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+.box-change{
+    width: 100%;
+    height: 30px;
+    background-color:rgb(244, 244, 244);
+}
+.box-change > p{
+    color: grey;
+    font-size: small;
+    padding-top: 1%;
+    padding-left: 10%;
+}
+.button-to-add{
+    border: none;
+    width: 100%;
+    color: white;
+    background-color: rgb(192, 43, 117);
+    padding: 3%;
+    font-size: large;
+}
+.div-to-btn{
+    padding-top: 20px
+}

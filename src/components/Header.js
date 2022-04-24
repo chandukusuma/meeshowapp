@@ -16,7 +16,7 @@ export const Header = () => {
 
             <Container style={{ "height": "55px" }}>
 
-                <Navbar.Brand href="#home" style={{ "fontSize": "38px", "fontWeight": "bold", color: "rgba(245, 40, 145, 0.8)" }}>meesho</Navbar.Brand>
+                <Navbar.Brand href="#home" style={{ "fontSize": "38px", "fontWeight": "bold", color: "rgba(245, 40, 145, 0.8)" }} onClick={() => {navigate("/")}}>meesho</Navbar.Brand>
                 <input id='search-input' type="search" placeholder='Try Saree, Kurti or search by Product code' style={{ "width": "30%", "padding": "15px", "marginRight": "25%", "borderRadius": "5px", "borderColor": "lightGrey" }}></input>
                 <Nav className="me-auto">
                     <Nav.Link>
