@@ -22,7 +22,7 @@ function App() {
     <Header />
     <Hovernav ></Hovernav>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path='/Silk' element={<Silk />} />
           <Route path='/single' element={<Individual />} />
           <Route path="/WomenEthnic" element={<Womenethnic />} />

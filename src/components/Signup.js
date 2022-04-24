@@ -22,7 +22,7 @@ function Signup() {
 
     const change= () => {
         generateOtp()
-        navigate("/home")
+        // navigate("/")
 
     }
 

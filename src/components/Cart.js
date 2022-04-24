@@ -51,7 +51,9 @@ function Cart() {
 
                     if(e.length == 0){
                             return(
-                                <p>Your cart is empty</p>
+                                <h1 style={{
+                                    "fontSize":"200px"
+                                }}>Your cart is empty</h1>
 
                             )
                     }
