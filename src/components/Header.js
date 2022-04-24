@@ -40,8 +40,8 @@ export const Header = () => {
                         <p style={{ "fontSize": "16px", "paddingTop": "20px", "marginRight": "1rem", marginLeft: "1rem" }}>Become A Supplier</p>
                     </Nav.Link>
                     <div className='vertical_line'></div>
-                    <Nav.Link href="#Signup">
-                        <a href='/Signup'>
+                    <Nav.Link>
+                        <a onClick={() => {navigate("/Signup")}}>
                         <i class="fa-solid fa-user" style={{ "paddingTop": "20px", "marginRight": "1.9rem", "marginLeft": "2rem", "fontSize": "20px" }}>
                             <p className='dropdown_two' style={{ "fontSize": "x-small", "color": "black", "marginTop": "5px", marginLeft: "-25%" }}>Profile
                             <div className='hover_dropdown_two'>
