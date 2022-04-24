@@ -41,8 +41,8 @@ export const Header = () => {
                     </Nav.Link>
                     <div className='vertical_line'></div>
                     <Nav.Link>
-                        <a onClick={() => {navigate("/Signup")}}>
-                        <i class="fa-solid fa-user" style={{ "paddingTop": "20px", "marginRight": "1.9rem", "marginLeft": "2rem", "fontSize": "20px" }}>
+                        <a>
+                        <i class="fa-solid fa-user" style={{ "paddingTop": "20px", "marginRight": "1.9rem", "marginLeft": "2rem", "fontSize": "20px" }} onClick={() => {navigate("/Signup")}}>
                             <p className='dropdown_two' style={{ "fontSize": "x-small", "color": "black", "marginTop": "5px", marginLeft: "-25%" }}>Profile
                             <div className='hover_dropdown_two'>
                                 <p style={{"fontFamily":"-moz-initial", "fontSize":"16px"}}>Hello user</p>
