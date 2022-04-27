@@ -42,6 +42,7 @@ function Signup() {
     return (
         <>
         <Header />
+        <div className='extra-to-set'></div>
             <div className='body_data'>
                 <div className='image'>
                     <img src="https://images.meesho.com/images/marketing/1648820929975.jpeg" />

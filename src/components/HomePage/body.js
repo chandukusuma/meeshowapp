@@ -8,7 +8,8 @@ function Body() {
 
 
   return (
-    <div>
+    <div className='main-body'>
+      <div className='extra-to-set'></div>
       <Container className='container'
         style={
           {

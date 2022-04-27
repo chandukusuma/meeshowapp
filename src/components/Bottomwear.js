@@ -5,11 +5,22 @@ import { Header } from './Header';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import Hovernav from './HomePage/Hovernav';
+import { ADD } from "../redux/Actions/Action"
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 
 function Bottomwear() {
 
     const [bottom, setBottom] = useState(Westernwear);
+
+    const navigate = useNavigate();
+
+    const dispatch = useDispatch()
+
+    const send = (e) => {
+        dispatch(ADD(e))
+    }
 
     return (
 
@@ -17,9 +28,9 @@ function Bottomwear() {
         <div>
             <Header />
       <Hovernav />
-            <h2 style={{ "textAlign": "left", "marginLeft": "8.5%", "padding": "2%" }}>Products for you</h2>
+            <h2 style={{ "textAlign": "left", "marginLeft": "8.5%", "padding": "2%", "height":"180px" }}>Products for you</h2>
 
-            <div className='row d-grid' style={{ "width": "80%", "margin": "auto", "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%", "justifyContent": "center", "gridGap": "1rem", "marginBottom": "1%" }}>
+            <div className='row d-grid' style={{ "width": "94%", "margin": "auto", "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%", "justifyContent": "center", "gridGap": "1rem", "marginBottom": "1%" }}>
                 {
                     bottom.map((e, id) => {
 
@@ -28,9 +39,13 @@ function Bottomwear() {
                             return (
                                 <>
                                     <Card style={{ width: '18rem', "borderRadius": "0.7rem" }}
-
+                                        onClick={() => {
+                                            send(e);
+                                            {navigate("/single")}
+                                            
+                                            }}
                                     >
-                                        <Card.Img variant="top" src={e.image} style={{ "height": "20rem", "width": "16.5rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }}
+                                        <Card.Img variant="top" src={e.image} style={{ "height": "21rem", "width": "17.7rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }}
                                         />
                                         <Card.Body>
                                             <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }}>{e.Name}</Card.Title>

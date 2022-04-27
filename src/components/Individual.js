@@ -25,12 +25,13 @@ function Individual() {
         <>
     <Header />
       <Hovernav />
-        <div style={{"backgroundColor":"white", "marginBlock":"2%"}}>
+      <div className='extra-to-set'></div>
+        <div style={{"backgroundColor":"white", "marginBlock":"0%", height:"150px"}}>
 
             {
                 Singleitem.map((e) => {
                     return (
-                        <div style={{ "width": "80%", "margin": "auto", "marginTop": "2%" }}>
+                        <div style={{ "width": "80%", "margin": "auto", "marginTop": "0%", "height":"150px" }}>
 
                             <div style={{ "display": "flex" }}>
                                 <div style={{ "width": "60%","height":"500px", "border": "1px solid grey", "marginLeft": "5rem", backgroundColor:"white" }}>

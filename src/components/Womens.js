@@ -6,12 +6,23 @@ import { Header } from './Header'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import Hovernav from './HomePage/Hovernav'
+import { ADD } from "../redux/Actions/Action";
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 
 function Womens() {
 
     const [data, setData] = useState(Westernwear);
-    const [women, setWomen] = useState(Ethnicwear)
+    const [women, setWomen] = useState(Ethnicwear);
+
+    const navigate = useNavigate();
+
+    const dispatch = useDispatch()
+
+    const send = (e) => {
+        dispatch(ADD(e))
+    }
 
   return (
     <div>
@@ -25,7 +36,11 @@ function Womens() {
                         return (
                             <>
                                 <Card style={{ width: '18rem', "borderRadius": "0.7rem" }} 
-
+                                     onClick={() => {
+                                        send(e);
+                                        {navigate("/single")}
+                                        
+                                        }}
                                 >
                                     <Card.Img variant="top" src={e.image} style={{ "height": "20rem", "width": "16.5rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} 
                                         

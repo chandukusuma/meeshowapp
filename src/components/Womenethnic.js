@@ -5,7 +5,7 @@ import { Header } from './Header';
 import Hovernav from './HomePage/Hovernav';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-
+import "../components/Womenethnic.css"
 
 
 function Womenethnic() {
@@ -20,11 +20,12 @@ function Womenethnic() {
     <>
     <Header />
       <Hovernav />
+      <div className='extra-to-set'></div>
     <div className='row d-grid' style={
       {
-          "width": "80%",
+          "width": "94%",
           "margin": "auto",
-          "marginTop":"5%",
+          "marginTop":"2%",
           "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%",
           "justifyContent": "center",
           "alignItems": "center",
@@ -38,7 +39,7 @@ function Womenethnic() {
                 return (
                   <>
                       <Card style={{ width: '18rem', "borderRadius": "0.7rem" }}>
-                          <Card.Img variant="top" src={element.image} style={{ "height": "20rem", "width": "16.5rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} />
+                          <Card.Img variant="top" src={element.image} style={{ "height": "21rem", "width": "17.7rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} />
                           <Card.Body>
                               <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }} >{element.Name}</Card.Title>
                               <div style={{ "display": "flex" }}>

@@ -7,6 +7,9 @@ import { Header } from '../Header'
 import Hovernav from './Hovernav';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import { ADD } from '../../redux/Actions/Action'
+import { Individualreducer } from '../../redux/Reducers/reducer'
+import { useNavigate } from 'react-router-dom'
 
 
 function Silk() {
@@ -15,9 +18,11 @@ function Silk() {
 
     const dispatch = useDispatch();
 
+    const navigate = useNavigate()
+
 
     const send = (e) => {
-        dispatch(SINGLE(e))
+        dispatch(ADD(e))
     }
 
 
@@ -28,7 +33,7 @@ function Silk() {
         <>
             <Header />
             <Hovernav />
-            <h3 style={{ "marginLeft": "4.5%", "marginBottom": "2%", "marginTop": "1%" }}>Silk Sarees</h3>
+            <h3 style={{ "marginLeft": "4.5%", "marginBottom": "2%", "marginTop": "0%", "height":"150px" }}>Silk Sarees</h3>
 
             <div className='row d-grid' style={{ "width": "94%", "margin": "auto", "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%", "justifyContent": "center", "gridGap": "1rem", "marginBottom": "1%" }}>
                 {
@@ -38,7 +43,11 @@ function Silk() {
                             return (
                                 <>
                                     <div>
-                                        <Card style={{ width: '18rem', "borderRadius": "0.7rem" }} onClick={() => send(e)}>
+                                        <Card style={{ width: '18rem', "borderRadius": "0.7rem" }} onClick={() => {
+                                            send(e);
+                                            {navigate("/single")}
+                                            
+                                            }}>
                                             <Card.Img variant="top" src={e.image} style={{ "height": "21rem", "width": "17.7rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} />
                                             <Card.Body>
                                                 <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }}>{e.Name}</Card.Title>
