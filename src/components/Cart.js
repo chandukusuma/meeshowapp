@@ -120,7 +120,7 @@ function Cart() {
                                             <p>Clicking on continue will not deduct any money</p>
                                         </div>
                                         <div className='div-to-btn'>
-                                        <button className='button-to-add' onClick={() => {navigate("/Signup")}}>continue</button>
+                                        <button className='button-to-add' onClick={() => {navigate("/")}}>continue</button>
                                         </div>
                                         <div style={{width:"100%", paddingTop:"3%"}}>
                                             <img src="https://images.meesho.com/images/marketing/1588578650850.png" width="100%"/>

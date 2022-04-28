@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux'
 import { SINGLE } from '../../redux/Actions/Action'
 import { Header } from '../Header'
 import Hovernav from './Hovernav';
+import Footer from './Footer'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import { ADD } from '../../redux/Actions/Action'
@@ -96,12 +97,14 @@ function Silk() {
                     })
                 }
             </div>
-            <div style={{"marginBottom":"10%", marginLeft:"40%"}}>
+            <div style={{"marginBottom":"5%", marginLeft:"40%"}}>
                 <Stack spacing={2}>
                     <Pagination count={10} color="secondary" />
                 </Stack>
             </div>
+            <Footer />
         </>
+        
 
     )
 }

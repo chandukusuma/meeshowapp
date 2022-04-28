@@ -5,6 +5,7 @@ import { Header } from './Header'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import Hovernav from './HomePage/Hovernav'
+import Footer from './HomePage/Footer';
 import { ADD } from "../redux/Actions/Action"
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -90,12 +91,12 @@ function Rayon() {
               })
             }
           </div>
-          <div style={{"marginBottom":"10%", marginLeft:"40%"}}>
+          <div style={{"marginBottom":"5%", marginLeft:"40%"}}>
                 <Stack spacing={2}>
                     <Pagination count={10} color="secondary" />
                 </Stack>
             </div>
-          
+          <Footer />
         </>
     
       )

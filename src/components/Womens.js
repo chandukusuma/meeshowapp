@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card'
 import Ethnicwear from './CardData'
 import Westernwear from './data'
 import { Header } from './Header'
+import Footer from './HomePage/Footer'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import Hovernav from './HomePage/Hovernav'
@@ -150,11 +151,12 @@ function Womens() {
                 }
 
             </div>
-            <div style={{"marginBottom":"10%", marginLeft:"40%"}}>
+            <div style={{"marginBottom":"5%", marginLeft:"40%"}}>
                 <Stack spacing={2}>
                     <Pagination count={10} color="secondary" />
                 </Stack>
             </div>
+            <Footer ></Footer>
         </div>
   )
 }

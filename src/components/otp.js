@@ -32,7 +32,7 @@ function Otp() {
        
 
         if(otp == sign){
-            navigate("/")
+            navigate("/Cart")
         }
         else{
             alert("INVALID OTP")

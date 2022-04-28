@@ -36,7 +36,7 @@ function Cards() {
 
     return (
 
-        <div>
+        <div style={{marginBottom: "5%"}}>
             <h2 style={{ "textAlign": "left", "marginLeft": "8.5%", "padding": "2%" }}>Products for you</h2>
 
             <div className='row d-grid' style={{ "width": "80%", "margin": "auto", "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%", "justifyContent": "center", "gridGap": "1rem", "marginBottom": "1%" }}>

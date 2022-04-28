@@ -3,6 +3,7 @@ import Body from './body'
 import Cards from '../Cards'
 import { Header } from '../Header'
 import Hovernav from './Hovernav'
+import Footer from './Footer'
 function Home() {
   return (
     <div>
@@ -10,6 +11,7 @@ function Home() {
       <Hovernav />
         <Body />
         <Cards />
+        <Footer />
     </div>
   )
 }
