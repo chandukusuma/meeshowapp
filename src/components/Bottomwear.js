@@ -28,7 +28,7 @@ function Bottomwear() {
         <div>
             <Header />
       <Hovernav />
-            <h2 style={{ "textAlign": "left", "marginLeft": "8.5%", "padding": "2%", "height":"180px" }}>Products for you</h2>
+            <h2 style={{ "textAlign": "left", "marginLeft": "8.5%", "padding": "2%", "height":"170px" }}>Products for you</h2>
 
             <div className='row d-grid' style={{ "width": "94%", "margin": "auto", "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%", "justifyContent": "center", "gridGap": "1rem", "marginBottom": "1%" }}>
                 {

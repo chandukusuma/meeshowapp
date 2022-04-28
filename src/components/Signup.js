@@ -3,6 +3,8 @@ import "../components/Signup.css"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import { Header } from './Header'
+import { useDispatch } from 'react-redux'
+import {signupAction} from "../redux/Actions/Action"
 import { SendToMobile, SubdirectoryArrowRightSharp } from '@mui/icons-material'
 
 
@@ -30,6 +32,10 @@ function Signup() {
     // }, [mobile])
 
 
+    const dispatch  = useDispatch()
+
+
+
 
     function onSginup(e) {
         e.preventDefault();
@@ -46,7 +52,13 @@ function Signup() {
 
         if(!error){
             console.log("form submit")
-            navigate("/")
+            dispatch(signupAction({mobile:mobile, otp:Math.floor(1000 + Math.random() * 9000)}))
+
+            const b = dispatch(signupAction({mobile:mobile, otp:Math.floor(1000 + Math.random() * 9000)}));
+
+            alert(b.payload.otp)
+            
+            navigate("/otp")
         }
     }
 

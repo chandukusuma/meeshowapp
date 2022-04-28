@@ -18,3 +18,10 @@ export const GetData = () => {
     }
 }
 
+export const signupAction = (data) => {
+    return{
+        type : "SIGNUP",
+        payload: data
+    }
+}
+

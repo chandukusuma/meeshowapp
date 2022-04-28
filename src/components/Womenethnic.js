@@ -23,6 +23,10 @@ function Womenethnic() {
     const send = (e) => {
         dispatch(ADD(e))
     }
+
+    
+
+
   
 
   return (
@@ -30,12 +34,11 @@ function Womenethnic() {
     <>
     <Header />
       <Hovernav />
-      <div className='extra-to'></div>
+      <div className='extra'></div>
     <div className='row d-grid' style={
       {
           "width": "94%",
           "margin": "auto",
-          "marginTop":"0%",
           "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%",
           "justifyContent": "center",
           "alignItems": "center",

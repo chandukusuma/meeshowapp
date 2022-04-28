@@ -1,38 +1,66 @@
 const INIT_STATE = {
-    Spage : [],
+    Spage: [],
 };
 
 const INITIAL = {
-    Indpage : []
+    Indpage: []
 }
 
-export const Spagereducer = (state=INIT_STATE,action) => {
-    switch(action.type){
+const SIGN = {
+    data: {
+        mobile: "",
+        otp: ""
+    }
+}
+
+
+
+export const Spagereducer = (state = INIT_STATE, action) => {
+    switch (action.type) {
         case "ADD_DATA":
 
-        {console.log(state);
+            {
+                console.log(state);
 
-            return {
-                Spage:[action.payload]
+                return {
+                    Spage: [action.payload]
+                }
             }
-        }
 
-        
 
-        default :
+
+        default:
             return state
     }
 }
 
-export const Individualreducer = (state=INITIAL, action) => {
-    switch(action.type){
+export const Individualreducer = (state = INITIAL, action) => {
+    switch (action.type) {
         case "SHOW_DATA":
-            return{
-                Indpage:[action.payload]
+            return {
+                Indpage: [action.payload]
             }
 
         default:
-           return state
+            return state
+    }
+}
+
+
+export const signUpreducer = (state = SIGN, action) => {
+    switch (action.type) {
+        case "SIGNUP":
+            {
+                state.data = action.payload
+                return {
+                    state
+                }
+
+
+            }
+
+            default :
+             return state
     }
 }
 

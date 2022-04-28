@@ -18,6 +18,7 @@ import Rayon from './components/Rayon';
 import Bottomwear from './components/Bottomwear';
 import Cartnav from './components/Cartnav';
 import {Routes, Route } from 'react-router-dom';
+import Otp from './components/otp';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/Cart" element={<Cart />} />
           <Route path="/Topwear" element={<Topwear />} />
           <Route path="/Bottomwear" element={<Bottomwear />} />
+          <Route path='/otp' element={<Otp />} />
         </Routes>
     {/* <Footer /> */}
     </>
