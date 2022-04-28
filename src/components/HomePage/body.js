@@ -9,7 +9,8 @@ function Body() {
 
   return (
     <div className='main-body'>
-      <div className='extra-to-set'></div>
+      {/* <div className='extra-to-set'>chandu</div> */}
+      <div className='extra-2'></div>
       <Container className='container'
         style={
           {
@@ -17,7 +18,7 @@ function Body() {
             "height": "350px",
             "margin": "auto",
             "display": "flex",
-            "marginTop": "3%",
+            "marginTop": "0%",
             "marginBottom": "4%"
           }
         }>

@@ -6,6 +6,9 @@ import Hovernav from './HomePage/Hovernav';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import "../components/Womenethnic.css"
+import { ADD } from "../redux/Actions/Action";
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 
 function Womenethnic() {
@@ -13,6 +16,13 @@ function Womenethnic() {
 
   const [ethnic, setEthnic] = useState(Ethnicwear);
 
+  const navigate = useNavigate();
+
+    const dispatch = useDispatch()
+
+    const send = (e) => {
+        dispatch(ADD(e))
+    }
   
 
   return (
@@ -20,12 +30,12 @@ function Womenethnic() {
     <>
     <Header />
       <Hovernav />
-      <div className='extra-to-set'></div>
+      <div className='extra-to'></div>
     <div className='row d-grid' style={
       {
           "width": "94%",
           "margin": "auto",
-          "marginTop":"2%",
+          "marginTop":"0%",
           "gridTemplateColumns": "23.5% 23.5% 23.5% 23.5%",
           "justifyContent": "center",
           "alignItems": "center",
@@ -38,7 +48,11 @@ function Womenethnic() {
               if(element.Category==="Saree"){
                 return (
                   <>
-                      <Card style={{ width: '18rem', "borderRadius": "0.7rem" }}>
+                      <Card style={{ width: '18rem', "borderRadius": "0.7rem" }} onClick={() => {
+                                            send(element);
+                                            {navigate("/single")}
+                                            
+                                            }}>
                           <Card.Img variant="top" src={element.image} style={{ "height": "21rem", "width": "17.7rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} />
                           <Card.Body>
                               <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }} >{element.Name}</Card.Title>

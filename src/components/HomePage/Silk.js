@@ -48,7 +48,7 @@ function Silk() {
                                             {navigate("/single")}
                                             
                                             }}>
-                                            <Card.Img variant="top" src={e.image} style={{ "height": "21rem", "width": "17.7rem", "marginLeft": "-0.7rem", "borderRadius": "0.7rem" }} />
+                                            <Card.Img variant="top" src={e.image} style={{ "height": "21rem", "width": "17.7rem", "marginLeft": "0.1rem", "borderRadius": "0.7rem" }} />
                                             <Card.Body>
                                                 <Card.Title style={{ "fontSize": "small", "color": "grey", "textAlign": "left" }}>{e.Name}</Card.Title>
                                                 <div style={{ "display": "flex" }}>

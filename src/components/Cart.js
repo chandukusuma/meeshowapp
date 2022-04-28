@@ -22,6 +22,7 @@ function Cart() {
     return (
         <>
         <Cartnav />
+        {/* <div className='extra-to'></div> */}
         <div className='main'>
 
             {
