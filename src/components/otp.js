@@ -54,7 +54,7 @@ function Otp() {
                 </div>
                 <div className='form-div'>
                     <input type="number" onChange={onChange} className="input-btn" />
-                    <p>please enter the last digit twice</p>
+                    
                 </div>
                 <div className='resend-otp'>
                     <h5>RESEND OTP</h5>
